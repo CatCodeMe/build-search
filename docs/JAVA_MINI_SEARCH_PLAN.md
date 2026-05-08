@@ -2,6 +2,17 @@
 
 这个分支从 Java 版本的 `mini-search` 开始。目标不是直接使用 Lucene 或 Elasticsearch，而是先自己实现核心概念，再对照成熟搜索引擎。
 
+## 文档拆分原则
+
+根目录 `README.md` 只保留入口信息。长期学习路线、阶段说明和维护规则都放在 `docs/` 下：
+
+- [文档索引](README.md)
+- [练习维护规则](MAINTAINING_EXERCISES.md)
+- [Stage 01: Baseline Search](stages/stage-01-baseline-search.md)
+- [Stage 02: Inverted Index](stages/stage-02-inverted-index.md)
+- [Stage 03: Ranking Models](stages/stage-03-ranking-models.md)
+- [Stage 04: Search Evaluation](stages/stage-04-search-evaluation.md)
+
 ## 第一阶段：线性扫描基线
 
 已完成起步代码：
@@ -28,13 +39,7 @@
 - IDE 点击运行：`me.catcodeme.search.app.Searchlings`
 - IDEA 运行配置：`Searchlings - Default`、`Searchlings - List`、`Searchlings - Stage 01` 到 `Searchlings - Stage 04`
 
-Codex 后续维护规则：
-
-- 新练习必须实现 `Exercise`。
-- 新练习必须注册到 `ExerciseCatalog`。
-- 新阶段必须扩展 `ExerciseCategory`。
-- 新阶段必须增加对应的 `.run/Searchlings - Stage XX.run.xml`，这样换机器后 IDEA 也能直接点击运行。
-- 不维护 shell runner 和 JBang runner，入口统一收敛到 IDEA run configuration。
+Codex 后续维护规则见 [MAINTAINING_EXERCISES.md](MAINTAINING_EXERCISES.md)。
 
 当前评分规则：
 
