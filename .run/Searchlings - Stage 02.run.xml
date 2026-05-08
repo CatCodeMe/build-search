@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Searchlings - Stage 02" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="me.catcodeme.search.app.Searchlings" />
+    <module name="build-search" />
+    <option name="PROGRAM_PARAMETERS" value="stage-02" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

@@ -1,0 +1,17 @@
+<configuration>
+    <!--
+        Keep the beginner output compact:
+        - timestamp: lets us compare query latency experiments later
+        - level: INFO for learning milestones, DEBUG for inner scoring details
+        - logger: shortened class name, useful once there are many exercises
+    -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %-5level [%logger{28}] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>
